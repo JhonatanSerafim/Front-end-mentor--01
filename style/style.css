@@ -172,8 +172,14 @@ main {
   color: #B25CDB;
 }
 
+.section-1 .imagem {
+  color: red;
+}
+
 .section-1 img {
   border-radius: 0px 10px 10px 0px;
+  background-image: #B25CDB;
+  opacity: 30%;
 }
 
 .section-1 .title {
