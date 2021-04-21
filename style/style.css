@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap%27");
 html,
 body,
 div,
@@ -156,6 +156,7 @@ main {
 }
 
 .section-1 {
+  border-radius: 10px;
   background-color: var(--color-second);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,7 +168,31 @@ main {
   color: var(--color-text);
 }
 
+.section-1 .word {
+  color: #B25CDB;
+}
+
+.section-1 img {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.section-1 .title {
+  font-size: 35px;
+  font-family: 'Lexend Deca', sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section-1 .text {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .content {
+  width: 540px;
+  height: 446px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,14 +212,29 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container-info .number {
   font-size: 25px;
   font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15%;
+}
+
+.container-info .text-info {
+  font-family: "Inter", sans-serif;
   color: var(--color-text);
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.container-info .templates {
+  margin-right: 20%;
+  margin-left: 20%;
 }
 /*# sourceMappingURL=style.css.map */
