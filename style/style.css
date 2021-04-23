@@ -218,30 +218,53 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-info .container-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.container-info .number {
+.container-info .container-number li {
+  margin-left: 25px;
+}
+
+.container-info .container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container-info .container-text li {
+  margin-left: 20px;
+}
+
+.container-info .container-number {
   font-size: 25px;
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: 700;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
 
-.container-info .text-info {
+.container-info .container-text {
   font-family: "Inter", sans-serif;
   color: var(--color-text);
   font-weight: 700;
   font-size: 10px;
-}
-
-.container-info .templates {
-  margin-right: 20%;
-  margin-left: 20%;
 }
 
 .background {
@@ -260,6 +283,9 @@ main {
 
 /*MEDIA QUERY MOBILE*/
 @media (max-width: 768px) {
+  body {
+    overflow: visible;
+  }
   .section-1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -276,7 +302,7 @@ main {
             align-items: center;
   }
   .content {
-    width: 300px;
+    width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,6 +316,20 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .container-info {
+    display: contents;
+    padding: 50px;
+  }
+  .background {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .background .imagem img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
